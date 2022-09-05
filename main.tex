@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Maryll Castelino} \\ \vspace{1pt}
+    \faPhone \thinspace \thinspace \small +91 7760517080 $|$ 
+    \faEnvelope \thinspace \thinspace \href{mailto:maryllcastelino@gmail.com}{\underline{maryllcastelino@gmail.com}} $|$ 
+    \faLinkedin \thinspace \thinspace \href{https://www.linkedin.com/in/maryll-castelino-364085192/}{\underline{maryll-castelino}} $|$
+    \faGithub \thinspace \thinspace \href{https://github.com/Maryll-castelino}{\underline{Maryll-castelino}}
+    \faGlobe \thinspace \thinspace \href{https://maryll-castelino.github.io}{\underline{maryll-castelino.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Christ (Deemed to be University)}{Bangalore, KA}
+      {Bachelor of Technology in Computer Science and Engineering}{2019 - 2023}
+      \resumeItem{GPA:3.83/4.0}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer Intern}{Aug 2022 -- Present}
+      {Phoenix Compliance}{}
+      \resumeItemListStart
+        \resumeItem{Currently Working on improving their product which helps doctors in US to automate and digitize the paperwork for their patients}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tax Technology Intern}{May 2022 -- July 2022}
+      {Deloitte USI}{Hyderabad, Telangana}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack web portal using ASP.NET Core MVC, Microsoft SQL Server to upload and track PowerBI data files}
+        \resumeItem{Used Microsoft PowerBI to generate data visualization for the sales prices of a company}
+        \resumeItem{Worked remotely in groups of 3 interns and collaborated using github}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developement Intern}{May 2021 -- June 2021}
+      {The Sparks Foundation}{}
+      \resumeItemListStart
+        \resumeItem{Built a Full-Stack Banking Web application from scratch with features such as viewing account balance and transferring money}
+        \resumeItem{Used the PERN stack (PostgreSQL, ExpressJS, ReactJS, NodeJS) to create the application}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Multiplayer Card Game} $|$ \emph{Node.js, React, Express.js, Socket.io, Heroku}}{July 2021 -- Sep 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a Realtime multiplayer card game with Node.js and Socket.io}
+            \resumeItem{Users can create or join rooms created by other players to play against each other at the same time}
+            \resumeItem{Implemented logic for users to play their turns one by one using Node.js and Socket.io}
+            \resumeItem{Hosted the project on GitHub and Deployed to Heroku}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Markdown blog} $|$ \emph{Django, React, Markdown, Git}}{July 2022 -- Aug 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a blog website to write blogs using Django and GitHub}
+            \resumeItem{Used Markdown to display the content of the blogs}
+            \resumeItem{Used MongoDB to as database to store and retrieve blog data}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Python Music Player} $|$ \emph{Python, Tkinter, Pygame, Git}}{July 2020 -- Aug 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a GUI music player in python using the Tkinter library for GUI components}
+            \resumeItem{Made use of the pygame library to play audio files stored in the user's local storage}
+            \resumeItem{Implemented basic features such as play, pause, volume control and seeking}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, C\#, SQL (Postgres), JavaScript, HTML/CSS, Bash, Lua} \\
+     \textbf{Frameworks}{: .NET Core, ASP.NET, React, Node.js, Django} \\
+     \textbf{Developer Tools}{: Git, Docker, Heroku, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: Socket.io, Express.js, pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
